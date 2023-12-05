@@ -1,7 +1,10 @@
 class Spaceship extends Floater  
 { 
   private int size; 
+  private double  mySpeed; 
 
+ 
+ 
  public Spaceship(){
  size = 4; 
  corners = 6; 
@@ -22,46 +25,28 @@ class Spaceship extends Floater
   myColor = 255;
   myCenterX = 500;
   myCenterY = 500;
+  mySpeed = 0;  
+  
   myXspeed =0;
   myYspeed =0; 
   
  myPointDirection =0; 
  }
- 
- public void setX(int n){
-  myCenterX = n;
+      
+ public void setX(){
+  myXspeed=0;
+   myCenterX += Math.random()*400 -200;
   
  }
  
- public void setY(int n){
-  myCenterY = n;
+ public void setY(){
+   myYspeed = 0;  
+   myCenterY += Math.random()*400 -200;
  }
- 
- public void accelerateX(){
-  myYspeed = 0; 
-  myXspeed+=0.1;
- }
- public void deccelerateX(){
-  myYspeed = 0; 
-  myXspeed-=0.1; 
- }
- 
- public void accelerateY(){
-  myXspeed = 0; 
-  myYspeed+=0.1;
- }
- public void deccelerateY(){
-  myXspeed = 0;  
-  myYspeed-=0.1; 
- }
- 
- public void turnRight(){
-  myPointDirection+=1;
-   
- } 
- 
- public void turnLeft(){
-  myPointDirection-=1;
- }
+ public double speedGetter(){
+  return myXspeed + myYspeed; 
+}
+
  
 }
+
