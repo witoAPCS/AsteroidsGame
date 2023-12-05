@@ -29,19 +29,19 @@ public void draw()
 }
 
 public void keyPressed(){
-  if(key == 'w'){
+  if(key == 'w' || key == 'W'){
    Baller.accelerate(1);
   }
-  if(key == 's'){
+  if(key == 's' || key == 'S'){
    Baller.accelerate(-1);
   }
-  if(key == 'a'){
+  if(key == 'a' || key == 'A'){
    Baller.turn(-1);
   }
-  if(key == 'd'){
+  if(key == 'd'|| key == 'D'){
    Baller.turn(1); 
   }
-  if(key == 'h'){
+  if(key == 'h'|| key == 'H'){
    Baller.setX();
    Baller.setY(); 
   }
