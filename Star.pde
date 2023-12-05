@@ -13,7 +13,7 @@ class Star //note that this class does NOT extend Floater
   size = (int)(Math.random()*5)+6; 
   opacityConstant = opacity = (int)(Math.random()*255)+100;
   check = true; 
-  Color = 255;//color((int)(Math.random()*255)+100,(int)(Math.random()*255)+100,(int)(Math.random()*255)+100);
+  Color = color((int)(Math.random()*255)+100,(int)(Math.random()*255)+100,(int)(Math.random()*255)+100);
  }  
  
  public void transparency(){
