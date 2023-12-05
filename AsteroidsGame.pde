@@ -30,16 +30,16 @@ public void draw()
 
 public void keyPressed(){
   if(key == 'w' || key == 'W'){
-   Baller.accelerate(1);
+   Baller.accelerate(0.1);
   }
   if(key == 's' || key == 'S'){
-   Baller.accelerate(-1);
+   Baller.accelerate(-0.1);
   }
   if(key == 'a' || key == 'A'){
-   Baller.turn(-1);
+   Baller.turn(-1.5);
   }
   if(key == 'd'|| key == 'D'){
-   Baller.turn(1); 
+   Baller.turn(1.5); 
   }
   if(key == 'h'|| key == 'H'){
    Baller.setX();
