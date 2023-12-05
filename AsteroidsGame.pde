@@ -29,22 +29,21 @@ public void draw()
 }
 
 public void keyPressed(){
-  if(key == 's'){
-   Baller.accelerateY();
-  }
-  if(key == 'd'){
-   Baller.accelerateX();
-  }
   if(key == 'w'){
-   Baller.deccelerateY();
+   Baller.accelerate(1);
+  }
+  if(key == 's'){
+   Baller.accelerate(-1);
   }
   if(key == 'a'){
-   Baller.deccelerateX();
+   Baller.turn(-1);
   }
-  if(key == 'q'){
-    Baller.turnLeft(); 
+  if(key == 'd'){
+   Baller.turn(1); 
   }
-  if(key == 'e'){
-    Baller.turnRight();
+  if(key == 'h'){
+   Baller.setX();
+   Baller.setY(); 
   }
+
 }
