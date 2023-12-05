@@ -1,7 +1,7 @@
 class Spaceship extends Floater  
 { 
   private int size; 
-  private double  mySpeed; 
+
 
  
  
@@ -25,7 +25,7 @@ class Spaceship extends Floater
   myColor = 255;
   myCenterX = 500;
   myCenterY = 500;
-  mySpeed = 0;  
+
   
   myXspeed =0;
   myYspeed =0; 
