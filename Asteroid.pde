@@ -22,7 +22,7 @@ public class Asteroid extends Floater{
     super.move();myPointDirection++;
    if ( Math.pow(myCenterX - Baller.xGetter(),2) + 
         Math.pow(myCenterY - Baller.yGetter(),2) 
-   <= Math.pow(size + 12, 2)) Asteroids.remove(this);
+   <= Math.pow(size * 10, 2)) Asteroids.remove(this);
    
    }
   } 
