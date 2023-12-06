@@ -12,6 +12,9 @@ class Star //note that this class does NOT extend Floater
   y =(int)(Math.random()*1000);
   size = (int)(Math.random()*5)+6; 
   opacityConstant = opacity = (int)(Math.random()*255)+100;
+  if(opacityConstant > 253){ opacityConstant = 253;
+  opacity = 253;  
+}
   check = true; 
   Color = color((int)(Math.random()*255)+100,(int)(Math.random()*255)+100,(int)(Math.random()*255)+100);
  }  
@@ -29,7 +32,7 @@ class Star //note that this class does NOT extend Floater
     if(check == false){
      //for(int i = opacity; i <= 255; i++){
       opacity++; 
-      if(opacity >= 255) check = true; 
+      if(opacity >= 253) check = true; 
      }
     //}
    
