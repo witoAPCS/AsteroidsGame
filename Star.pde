@@ -15,8 +15,9 @@ class Star //note that this class does NOT extend Floater
   if(opacityConstant > 253){ opacityConstant = 253;
   opacity = 253;  
 }
-  check = true; 
-  Color = color((int)(Math.random()*255)+100,(int)(Math.random()*255)+100,(int)(Math.random()*255)+100);
+  check = true;
+  Color = 253; 
+  //Color = color((int)(Math.random()*255)+100,(int)(Math.random()*255)+100,(int)(Math.random()*255)+100);
  }  
  
  public void transparency(){
