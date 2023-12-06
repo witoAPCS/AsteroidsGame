@@ -3,6 +3,9 @@
 private ArrayList<Star> Stars = new ArrayList<Star>();
 public Star star = new Star(); 
 
+public ArrayList<Asteroid> Asteroids = new ArrayList<Asteroid>();
+public Asteroid AsteroidBase = new Asteroid(); 
+
 public Spaceship Baller; 
 
 public void setup() 
@@ -14,6 +17,9 @@ public void setup()
  for(int i = 0; i < 900; i++){
   Stars.add(new Star());
  }
+  for(int i = 0; i < 10; i++){
+  Asteroids.add(new Asteroid());
+ }
 }
 public void draw() 
 {
@@ -23,6 +29,11 @@ public void draw()
    Stars.get(i).transparency(); 
    Stars.get(i).show(); 
  
+ }
+ for(int i = 0; i < Asteroids.size(); i++){
+   Asteroids.get(i).show();
+  Asteroids.get(i).move();
+  
  }
  Baller.move(); 
  Baller.show(); 
@@ -45,5 +56,8 @@ public void keyPressed(){
    Baller.setX();
    Baller.setY(); 
   }
+
+
+
 
 }
