@@ -10,6 +10,7 @@ public Spaceship Baller;
 
 public void setup() 
 {
+  frameRate(240); 
   Baller = new Spaceship(); 
   noStroke(); 
  background(0);
