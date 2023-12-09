@@ -55,6 +55,9 @@ public double yGetter(){
  return myCenterY; 
 }
 
+public void directionSetter(double balls){
+ myPointDirection = balls; 
+}
 
 
 }
