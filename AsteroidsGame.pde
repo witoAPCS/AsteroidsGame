@@ -43,6 +43,7 @@ public void draw()
 public void keyPressed(){
   if(key == 'w' || key == 'W'){
    Baller.accelerate(0.1);
+ 
   }
   if(key == 's' || key == 'S'){
    Baller.accelerate(-0.1);
@@ -56,6 +57,7 @@ public void keyPressed(){
   if(key == 'h'|| key == 'H'){
    Baller.setX();
    Baller.setY(); 
+   Baller.directionSetter(Math.random()*200);
   }
 
 
