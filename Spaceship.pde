@@ -46,17 +46,24 @@ class Spaceship extends Floater
  public double speedGetter(){
   return myXspeed + myYspeed; 
 }
+ public double speedGetterY(){
+  return myYspeed; 
+}
 
-public double  xGetter(){
+ public double speedGetterX(){
+  return myXspeed; 
+}
+
+public double xGetter(){
  return myCenterX;
 }
-
+ 
 public double yGetter(){
- return myCenterY; 
-}
-
-public void directionSetter(double balls){
- myPointDirection = balls; 
+ return myCenterY;
+} 
+ 
+public double directionGetter(){
+ return myPointDirection;  
 }
 
 
