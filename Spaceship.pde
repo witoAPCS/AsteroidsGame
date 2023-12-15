@@ -1,6 +1,6 @@
 class Spaceship extends Floater  
 { 
-  private int size; 
+private int size; 
 
 
  
@@ -66,5 +66,8 @@ public double directionGetter(){
  return myPointDirection;  
 }
 
+public void directionSetter(double n){
+ myPointDirection = n;
+}
 
 }
