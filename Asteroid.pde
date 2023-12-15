@@ -1,6 +1,19 @@
 public class Asteroid extends Floater{
   private int size = (int)(Math.random()*5)+5; 
-  public Asteroid(){
+  
+public double sizeGetter(){
+ return size; 
+}
+
+public double yGetter(){
+ return myCenterY;}
+
+public double xGetter(){
+ return myCenterX;
+}
+
+//constructor
+public Asteroid(){
    corners = 8;
    xCorners = new int[]{-7,-7,1,7,8,6,2,-4}; 
    yCorners = new int[]{0,5,7,3,0,-5,-6,-6};
@@ -16,7 +29,7 @@ public class Asteroid extends Floater{
   myXspeed = Math.random()*5-2;
   myYspeed = Math.random()*5-2;
   myPointDirection = Math.random() * 5; 
-}
+}//end of constructor
     public void move ()   //move the floater in the current direction of travel
   {      
     super.move();myPointDirection++;
@@ -24,5 +37,6 @@ public class Asteroid extends Floater{
         Math.pow(myCenterY - Baller.yGetter(),2) 
    <= Math.pow(size * 10, 2)) Asteroids.remove(this);
    
-   }
+   }     
+   
   } 
