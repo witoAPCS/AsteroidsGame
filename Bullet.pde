@@ -3,8 +3,10 @@ public class Bullet extends Floater{
    myCenterX = Baller.xGetter();
    myCenterY = Baller.yGetter(); 
    myPointDirection = Baller.directionGetter(); 
-   myXspeed = Baller.speedGetterX();
-   myYspeed = Baller.speedGetterY();
+   double mySpeed = 10;
+   double dRadians =myPointDirection*(Math.PI/180);  
+   myXspeed = (mySpeed * Math.cos(dRadians));    
+   myYspeed = (mySpeed * Math.sin(dRadians));
    myColor = color(102, 255, 255);
    
    corners = 4; 
@@ -21,8 +23,32 @@ public class Bullet extends Floater{
    yCorners[3] = 0; 
 
 }
+    
+public double yGetter(){
+ return myCenterY;}
+
+public double xGetter(){
+ return myCenterX;
+}
   
   
+   public void move ()   //move the floater in the current direction of travel
+  {  
+    
+    //change the x and y coordinates by myXspeed and myYspeed       
+    myCenterX += myXspeed;    
+    myCenterY += myYspeed;     
+
+    //wrap around screen    
+    if(myCenterX >width)
+    {     
+     balls.remove(this); 
+  }   
   
   
+}
+
+
+ 
+
 }
